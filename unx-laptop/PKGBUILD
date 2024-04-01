@@ -1,0 +1,22 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=unx-laptop
+pkgver=1
+pkgrel=1
+pkgdesc="Unoxxis Metapackage for laptop systems"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+groups=(unoxxis-meta)
+
+# Base System Packages
+depends=(unx-desktop)
+
+# source=()
+
+# sha256sums=()
+
+# install="$pkgname.install"
+
+#package() {
+#    
+#}
