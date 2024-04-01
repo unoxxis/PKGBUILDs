@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -19,7 +19,7 @@ depends=(unx-base)
 depends+=(
     pipewire pipewire-alsa pipewire-jack pipewire-pulse
     wireplumber libpulse
-    gst-plugins-pipewire
+    gst-plugin-pipewire
 )
 
 # source=()
