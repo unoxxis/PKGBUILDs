@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=2
-pkgrel=2
+pkgver=3
+pkgrel=1
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -25,7 +25,7 @@ depends+=(
 
 # Fonts
 depends+=(
-    ttf-fira-code
+    ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k # For Terminal
 )
 
 # source=()
