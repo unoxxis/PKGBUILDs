@@ -1,0 +1,17 @@
+pkgbase = unx-desktop
+	pkgdesc = Unoxxis Metapackage for desktop systems
+	pkgver = 1
+	pkgrel = 1
+	url = https://github.com/unoxxis/PKGBUILDs
+	arch = any
+	license = GPL-3.0-or-later
+	depends = unx-base
+	depends = pipewire
+	depends = pipewire-alsa
+	depends = pipewire-jack
+	depends = pipewire-pulse
+	depends = wireplumber
+	depends = libpulse
+	depends = gst-plugins-pipewire
+
+pkgname = unx-desktop

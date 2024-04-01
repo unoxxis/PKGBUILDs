@@ -1,26 +1,25 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
-pkgname=unx-base
+pkgname=unx-desktop
 pkgver=1
-pkgrel=3
-pkgdesc="Unoxxis Base System Metapackage"
+pkgrel=1
+pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
 license=('GPL-3.0-or-later')
 
 # Base System Packages
-depends=(
-    base base-devel btrfs-progs linux linux-firmware paru chezmoi
-    zram-generator efibootmgr
-)
+depends=(unx-base)
 
-# Networking packages
-depends+=(
-    networkmanager
-)
+# Desktop Environment
+#depends+=(
+#    
+#)
 
-# Basic Tools
+# Sound
 depends+=(
-    vim git man
+    pipewire pipewire-alsa pipewire-jack pipewire-pulse
+    wireplumber libpulse
+    gst-plugins-pipewire
 )
 
 # source=()
