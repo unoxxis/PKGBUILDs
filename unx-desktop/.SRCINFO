@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	groups = unoxxis-meta
@@ -15,7 +15,7 @@ pkgbase = unx-desktop
 	depends = libpulse
 	depends = gst-plugin-pipewire
 	depends = ttf-fira-code
-	depends = nerd-fonts-fira-code
+	depends = ttf-firacode-nerd
 	depends = ttf-meslo-nerd-font-powerlevel10k
 
 pkgname = unx-desktop
