@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
 pkgver=6
-pkgrel=1
+pkgrel=2
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -42,12 +42,14 @@ source=(
     'zsh-rehash.hook'
     'reflector.conf'
     'swappiness.conf'
+    'unx-pacman.conf'
 )
 
 sha256sums=(
     '7eeb2853d23cbba629f22d10384129a879c75672c0f3d7aaacb5cd4a4dc73702'
     '34747ee04aaa49f3cce15c07e64021824acfa0d2361dd72cd9226f23916e9bbb'
     '7fc2df93687e85e0d0032513b44e4fd75f0ad47790c07556fbba657e6cbd92c8'
+    '21602b6af86019df98cf85422de8a1414143d79d186a945ed0b17d6cd642d360'
 )
 
 install="$pkgname.install"
@@ -57,4 +59,5 @@ package() {
     install -dm 0755 "$pkgdir/var/cache/zsh"
     install -Dm 0644 reflector.conf "$pkgdir/etc/xdg/reflector/reflector.conf.unx"
     install -Dm 0644 swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
+    install -Dm 0644 unx-pacman.conf "%pkgdir/etc/pacman.d/01-unx-pacman.conf"
 }

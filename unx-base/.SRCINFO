@@ -1,7 +1,7 @@
 pkgbase = unx-base
 	pkgdesc = Unoxxis Base System Metapackage
 	pkgver = 6
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-base.install
 	arch = any
@@ -43,8 +43,10 @@ pkgbase = unx-base
 	source = zsh-rehash.hook
 	source = reflector.conf
 	source = swappiness.conf
+	source = unx-pacman.conf
 	sha256sums = 7eeb2853d23cbba629f22d10384129a879c75672c0f3d7aaacb5cd4a4dc73702
 	sha256sums = 34747ee04aaa49f3cce15c07e64021824acfa0d2361dd72cd9226f23916e9bbb
 	sha256sums = 7fc2df93687e85e0d0032513b44e4fd75f0ad47790c07556fbba657e6cbd92c8
+	sha256sums = 21602b6af86019df98cf85422de8a1414143d79d186a945ed0b17d6cd642d360
 
 pkgname = unx-base
