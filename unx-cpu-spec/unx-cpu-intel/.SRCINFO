@@ -1,7 +1,7 @@
 pkgbase = unx-cpu-intel
 	pkgdesc = Unoxxis Metapackage for Intel CPU specific dependencies
 	pkgver = 2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	groups = unoxxis-meta
@@ -9,6 +9,5 @@ pkgbase = unx-cpu-intel
 	depends = intel-ucode
 	provides = unx-cpu-spec
 	conflicts = unx-cpu-amd
-	replaces = unx-cpu-spec
 
 pkgname = unx-cpu-intel
