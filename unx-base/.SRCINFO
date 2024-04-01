@@ -19,6 +19,8 @@ pkgbase = unx-base
 	depends = networkmanager
 	depends = vim
 	depends = git
-	depends = man
+	depends = man-db
+	depends = man-pages
+	depends = vim-colors-solarized-git
 
 pkgname = unx-base

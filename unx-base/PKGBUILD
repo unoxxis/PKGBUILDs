@@ -22,7 +22,12 @@ depends+=(
 
 # Basic Tools
 depends+=(
-    vim git man
+    vim git man-db man-pages
+)
+
+# Beautification
+depends+=(
+    vim-colors-solarized-git
 )
 
 # source=()
