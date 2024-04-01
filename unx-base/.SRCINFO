@@ -1,7 +1,7 @@
 pkgbase = unx-base
 	pkgdesc = Unoxxis Base System Metapackage
 	pkgver = 6
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-base.install
 	arch = any
@@ -24,6 +24,7 @@ pkgbase = unx-base
 	depends = man-pages
 	depends = zsh
 	depends = bat
+	depends = git-delta
 	depends = pacman-contrib
 	depends = reflector
 	depends = paccache-clean-hook
