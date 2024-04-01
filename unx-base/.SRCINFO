@@ -1,6 +1,6 @@
 pkgbase = unx-base
 	pkgdesc = Unoxxis Base System Metapackage
-	pkgver = 5
+	pkgver = 6
 	pkgrel = 1
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-base.install

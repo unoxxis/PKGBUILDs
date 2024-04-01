@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
-pkgver=5
+pkgver=6
 pkgrel=1
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
@@ -25,6 +25,12 @@ depends+=(
     vim git man-db man-pages zsh bat
 )
 
+# Pacman Hooks and Helpers
+depends+=(
+    pacman-contrib reflector paccache-clean-hook
+    pacdiff-pacman-hook-git sync-pacman-hook-git check-broken-packages-pacman-hook-git
+)
+
 # Beautification
 depends+=(
     vim-colors-solarized-git
@@ -34,15 +40,21 @@ depends+=(
 
 source=(
     'zsh-rehash.hook'
+    'reflector.conf'
+    'swappiness.conf'
 )
 
 sha256sums=(
     '7eeb2853d23cbba629f22d10384129a879c75672c0f3d7aaacb5cd4a4dc73702'
+    '34747ee04aaa49f3cce15c07e64021824acfa0d2361dd72cd9226f23916e9bbb'
+    '7fc2df93687e85e0d0032513b44e4fd75f0ad47790c07556fbba657e6cbd92c8'
 )
 
-# install="$pkgname.install"
+install="$pkgname.install"
 
 package() {
     install -Dm 0644 zsh-rehash.hook "$pkgdir/usr/share/libalpm/hooks/zsh-rehash.hook"
     install -dm 0755 "$pkgdir/var/cache/zsh"
+    install -Dm 0644 reflector.conf "$pkgdir/etc/xdg/reflector/reflector.conf.unx"
+    install -Dm 0644 swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
 }

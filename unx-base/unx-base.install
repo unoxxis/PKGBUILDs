@@ -1,0 +1,50 @@
+#!/bin/bash
+set -e
+
+
+
+## arg 1:  the new package version
+#pre_install() {
+	# do something here
+#}
+
+## arg 1:  the new package version
+post_install() {
+    post_upgrade
+
+    echo "Run reflector.service for the first time..."
+    systemctl start reflector.service
+}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+#pre_upgrade() {
+	# do something here
+#}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+post_upgrade() {
+    # Enable reflector timer
+    echo "Apply reflector.conf..."
+    mv /etc/xdg/reflector/reflector.conf /etc/xdg/reflector/reflector.conf.orig
+    ln -s /etc/xdg/reflector/reflector.conf.unx /etc/xdg/reflector/reflector.conf
+    
+    echo "Start reflector.timer..."
+    systemctl enable --now reflector.timer
+}
+
+## arg 1:  the old package version
+#pre_remove() {
+	# do something here
+#}
+
+## arg 1:  the old package version
+post_remove() {
+    echo "Stopping reflector.timer..."
+    systemctl disable --now reflector.timer
+
+    echo "Restore reflector.conf..."
+    rm /etc/xdg/reflector/reflector.conf /etc/xdg/reflector/reflector.conf.orig
+    mv /etc/xdg/reflector/reflector.conf.orig /etc/xdg/reflector/reflector.conf
+}
