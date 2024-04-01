@@ -9,7 +9,7 @@ license=('GPL-3.0-or-later')
 
 # Base System Packages
 depends=(
-    base base-devel btrfs-progs linux linux-firmware paru chezmoi 
+    base base-devel btrfs-progs linux linux-firmware paru chezmoi
     zram-generator
 )
 
@@ -20,7 +20,7 @@ depends+=(
 
 # Basic Tools
 depends+=(
-    vim git
+    vim git man
 )
 
 # source=()

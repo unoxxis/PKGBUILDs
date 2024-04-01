@@ -16,5 +16,6 @@ pkgbase = unx-base
 	depends = networkmanager
 	depends = vim
 	depends = git
+	depends = man
 
 pkgname = unx-base
