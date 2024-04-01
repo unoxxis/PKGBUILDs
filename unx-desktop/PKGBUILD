@@ -24,7 +24,7 @@ depends+=(
 )
 
 # Fonts
-depends +=(
+depends+=(
     ttf-fira-code
 )
 
