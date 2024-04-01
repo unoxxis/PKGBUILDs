@@ -1,0 +1,27 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=paccache-clean-hook
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Hook that cleans pacman cache on pacman run"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+
+depends=(pacman-contrib)
+
+source=(
+    'paccache-on-uninstall.hook'
+    'paccache-on-upgrade.hook'
+)
+
+sha256sums=(
+    '75831c484e7436d4fd1672c1d2093b5ff0dfb3622f000c4a88521dbbbdf89531'
+    'd7fa39f8a17e4ee156f93c440c1c8b64ebab5d3bbac0bd70237ca8413778fdec'
+)
+
+# install="$pkgname.install"
+
+package() {
+    install -Dm 0644 paccache-on-uninstall.hook "$pkgdir/usr/share/libalpm/hooks/paccache-on-uninstall.hook"
+    install -Dm 0644 paccache-on-upgrade.hook "$pkgdir/usr/share/libalpm/hooks/paccache-on-upgrade.hook"
+}

@@ -1,0 +1,14 @@
+pkgbase = paccache-clean-hook
+	pkgdesc = Hook that cleans pacman cache on pacman run
+	pkgver = 1.0.1
+	pkgrel = 1
+	url = https://github.com/unoxxis/PKGBUILDs
+	arch = any
+	license = GPL-3.0-or-later
+	depends = pacman-contrib
+	source = paccache-on-uninstall.hook
+	source = paccache-on-upgrade.hook
+	sha256sums = 75831c484e7436d4fd1672c1d2093b5ff0dfb3622f000c4a88521dbbbdf89531
+	sha256sums = d7fa39f8a17e4ee156f93c440c1c8b64ebab5d3bbac0bd70237ca8413778fdec
+
+pkgname = paccache-clean-hook

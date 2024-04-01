@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Cleaning pacman cache for installed packages (current + last 2)...
+When = PostTransaction
+Exec = /usr/bin/paccache -rvk3
+
