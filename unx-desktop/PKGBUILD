@@ -6,6 +6,7 @@ pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
 license=('GPL-3.0-or-later')
+groups=(unoxxis-meta)
 
 # Base System Packages
 depends=(unx-base)

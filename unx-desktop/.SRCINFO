@@ -4,6 +4,7 @@ pkgbase = unx-desktop
 	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
+	groups = unoxxis-meta
 	license = GPL-3.0-or-later
 	depends = unx-base
 	depends = pipewire
