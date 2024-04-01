@@ -1,0 +1,25 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=unx-devel
+pkgver=1
+pkgrel=1
+pkgdesc="Unoxxis Metapackage for development tools"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+groups=(unoxxis-meta)
+
+# Base System Packages
+depends=(unx-base base-devel)
+
+# Extended GIT resources
+depends+=(git gitflow-avh gitflow-zshcompletion-avh gitflow-bashcompletion-avh git-lfs)
+
+# source=()
+
+# sha256sums=()
+
+install="$pkgname.install"
+
+#package() {
+#    
+#}

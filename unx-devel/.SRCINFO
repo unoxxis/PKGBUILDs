@@ -1,0 +1,18 @@
+pkgbase = unx-devel
+	pkgdesc = Unoxxis Metapackage for development tools
+	pkgver = 1
+	pkgrel = 1
+	url = https://github.com/unoxxis/PKGBUILDs
+	install = unx-devel.install
+	arch = any
+	groups = unoxxis-meta
+	license = GPL-3.0-or-later
+	depends = unx-base
+	depends = base-devel
+	depends = git
+	depends = gitflow-avh
+	depends = gitflow-zshcompletion-avh
+	depends = gitflow-bashcompletion-avh
+	depends = git-lfs
+
+pkgname = unx-devel
