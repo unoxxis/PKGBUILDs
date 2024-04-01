@@ -1,0 +1,15 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=unx-cpu-amd
+pkgver=2
+pkgrel=1
+pkgdesc="Unoxxis Metapackage for AMD CPU specific dependencies"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+groups=(unoxxis-meta)
+
+provides=(unx-cpu-spec)
+conflict=(unx-cpu-intel)
+
+# Microcode
+depends=(amd-ucode)

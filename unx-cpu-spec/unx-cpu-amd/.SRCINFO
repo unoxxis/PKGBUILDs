@@ -1,0 +1,12 @@
+pkgbase = unx-cpu-amd
+	pkgdesc = Unoxxis Metapackage for AMD CPU specific dependencies
+	pkgver = 2
+	pkgrel = 1
+	url = https://github.com/unoxxis/PKGBUILDs
+	arch = any
+	groups = unoxxis-meta
+	license = GPL-3.0-or-later
+	depends = amd-ucode
+	provides = unx-cpu-spec
+
+pkgname = unx-cpu-amd
