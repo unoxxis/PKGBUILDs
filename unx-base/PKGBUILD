@@ -22,20 +22,26 @@ depends+=(
 
 # Basic Tools
 depends+=(
-    vim git man-db man-pages
+    vim git man-db man-pages zsh
 )
 
 # Beautification
 depends+=(
     vim-colors-solarized-git
+    zsh-theme-powerlevel10k-git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
 )
 
-# source=()
+source=(
+    'zsh-rehash.hook'
+)
 
-# sha256sums=()
+sha256sums=(
+    '7eeb2853d23cbba629f22d10384129a879c75672c0f3d7aaacb5cd4a4dc73702'
+)
 
 # install="$pkgname.install"
 
-#package() {
-#    
-#}
+package() {
+    install -Dm 0644 zsh-rehash.hook "$pkgdir/usr/share/libalpm/hooks/zsh-rehash.hook"
+    install -dm 0755 "$pkgdir/var/cache/zsh"
+}
