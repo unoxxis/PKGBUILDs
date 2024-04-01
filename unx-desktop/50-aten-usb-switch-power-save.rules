@@ -1,0 +1,5 @@
+# ATEN USB Switch Powermanagement Deactivate
+# Sonst friert das System bei längerem bleiben auf dem anderen Rechner ein
+# Quasi wird verhindert, dass es der Strom abgeschaltet wird.
+# Copy to /etc/udev/rules.d/
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0bda", ATTR{idProduct}=="5411", ATTR{power/control}="on"

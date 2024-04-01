@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=3
-pkgrel=2
+pkgver=4
+pkgrel=1
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -28,12 +28,16 @@ depends+=(
     ttf-fira-code ttf-firacode-nerd ttf-meslo-nerd-font-powerlevel10k # For Terminal
 )
 
-# source=()
+source=(
+    '50-aten-usb-switch-power-save.rules'
+)
 
-# sha256sums=()
+sha256sums=(
+    '25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8'
+)
 
 # install="$pkgname.install"
 
-#package() {
-#    
-#}
+package() {
+    install -Dmm 0644 50-aten-usb-switch-power-save.rules "$pkgdir/etc/udev/rules.d/50-aten-usb-switch-power-save.rules"
+}
