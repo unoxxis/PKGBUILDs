@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
-pkgver=4
+pkgver=5
 pkgrel=1
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
@@ -22,7 +22,7 @@ depends+=(
 
 # Basic Tools
 depends+=(
-    vim git man-db man-pages zsh
+    vim git man-db man-pages zsh bat
 )
 
 # Beautification
