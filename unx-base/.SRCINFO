@@ -27,6 +27,11 @@ pkgbase = unx-base
 	depends = zsh-autosuggestions
 	depends = zsh-history-substring-search
 	depends = zsh-syntax-highlighting
+	depends = ttf-fira-code
+	depends = ttf-firacode-nerd
+	depends = ttf-meslo-nerd-font-powerlevel10k
+	depends = awesome-terminal-fonts
+	depends = powerline-fonts
 	source = zsh-rehash.hook
 	sha256sums = 7eeb2853d23cbba629f22d10384129a879c75672c0f3d7aaacb5cd4a4dc73702
 

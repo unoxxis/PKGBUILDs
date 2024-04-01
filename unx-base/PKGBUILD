@@ -29,6 +29,7 @@ depends+=(
 depends+=(
     vim-colors-solarized-git
     zsh-theme-powerlevel10k-git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
+    ttf-fira-code ttf-firacode-nerd ttf-meslo-nerd-font-powerlevel10k awesome-terminal-fonts powerline-fonts
 )
 
 source=(
