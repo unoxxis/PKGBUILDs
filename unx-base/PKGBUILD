@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
