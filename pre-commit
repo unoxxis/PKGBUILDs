@@ -1,0 +1,12 @@
+#!/bin/sh
+# Pre--Commit Script to regenerate .SRCINFO
+
+echo "Pre-Commit Hook: Regenerating all .SRCINFO files..."
+for directory in $(find . -name 'PKGBUILD' -exec dirname "{}" \; | sort -u); do
+    echo "Regenerating .SRCINFO in $directory"
+    ( 
+        cd "$directory" 
+        makepkg --printsrcinfo > .SRCINFO 
+        git add .SRCINFO
+    )
+done
