@@ -9,5 +9,6 @@ pkgbase = unx-cpu-amd
 	depends = amd-ucode
 	provides = unx-cpu-spec
 	conflicts = unx-cpu-intel
+	replaces = unx-cpu-spec
 
 pkgname = unx-cpu-amd

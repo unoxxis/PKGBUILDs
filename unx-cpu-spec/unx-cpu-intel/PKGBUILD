@@ -9,6 +9,7 @@ license=('GPL-3.0-or-later')
 groups=(unoxxis-meta)
 
 provides=(unx-cpu-spec)
+replaces=(unx-cpu-spec)
 conflicts=(unx-cpu-amd)
 
 # Microcode
