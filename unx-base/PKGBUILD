@@ -1,0 +1,34 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=unx-base
+pkgver=1
+pkgrel=1
+pkgdesc="Unoxxis Base System Metapackage"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+
+# Base System Packages
+depends=(
+    base base-devel btrfs-progs linux linux-firmware paru chezmoi 
+    zram-generator
+)
+
+# Networking packages
+depends+=(
+    networkmanager
+)
+
+# Basic Tools
+depends+=(
+    vim git
+)
+
+# source=()
+
+# sha256sums=()
+
+# install="$pkgname.install"
+
+#package() {
+#    
+#}

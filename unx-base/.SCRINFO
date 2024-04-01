@@ -1,0 +1,20 @@
+pkgbase = unx-base
+	pkgdesc = Unoxxis Base System Metapackage
+	pkgver = 1
+	pkgrel = 1
+	url = https://github.com/unoxxis/PKGBUILDs
+	arch = any
+	license = GPL-3.0-or-later
+	depends = base
+	depends = base-devel
+	depends = btrfs-progs
+	depends = linux
+	depends = linux-firmware
+	depends = paru
+	depends = chezmoi
+	depends = zram-generator
+	depends = networkmanager
+	depends = vim
+	depends = git
+
+pkgname = unx-base
