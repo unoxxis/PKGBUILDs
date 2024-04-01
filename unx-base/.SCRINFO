@@ -1,7 +1,7 @@
 pkgbase = unx-base
 	pkgdesc = Unoxxis Base System Metapackage
 	pkgver = 1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	license = GPL-3.0-or-later
