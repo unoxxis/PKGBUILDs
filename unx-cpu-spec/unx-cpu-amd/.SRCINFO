@@ -8,5 +8,6 @@ pkgbase = unx-cpu-amd
 	license = GPL-3.0-or-later
 	depends = amd-ucode
 	provides = unx-cpu-spec
+	conflicts = unx-cpu-intel
 
 pkgname = unx-cpu-amd
