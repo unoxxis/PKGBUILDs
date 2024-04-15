@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=4
-pkgrel=3
+pkgrel=4
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -28,10 +28,10 @@ depends+=(
     ttf-fira-code ttf-firacode-nerd ttf-meslo-nerd-font-powerlevel10k # For Terminal
 )
 
-# System Tools
+# System Administration Tools
 depends+=(
     # qdirstat # Tool zum Directory visualisieren ohne KDE bloat  -> enable after DM is setup
-    tree # Zeigt in der shell einen Dateibaum an
+    
 )
 
 source=(

@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 4
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	groups = unoxxis-meta
@@ -17,7 +17,6 @@ pkgbase = unx-desktop
 	depends = ttf-fira-code
 	depends = ttf-firacode-nerd
 	depends = ttf-meslo-nerd-font-powerlevel10k
-	depends = tree
 	source = 50-aten-usb-switch-power-save.rules
 	sha256sums = 25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8
 
