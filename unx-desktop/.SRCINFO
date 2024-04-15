@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 5
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	groups = unoxxis-meta
@@ -56,7 +56,6 @@ pkgbase = unx-desktop
 	depends = gnome-tour
 	depends = raider-file-shredder
 	depends = collision
-	depends = decoder
 	depends = impression
 	depends = junction
 	depends = gnome-calendar
