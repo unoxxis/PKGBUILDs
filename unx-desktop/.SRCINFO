@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 6
-	pkgrel = 8
+	pkgrel = 9
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -90,11 +90,9 @@ pkgbase = unx-desktop
 	source = set-global-dconf-profile.sh
 	source = unx-dconf-profile
 	source = dconf-settings-unx.ini
-	source = dconf-update.hook
 	sha256sums = 25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8
 	sha256sums = 504e6b841a3aa9b963e650b677a6e78452f13d9b9ba642f4ebca3d1f7e34e358
 	sha256sums = 29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22
 	sha256sums = 01301051fa266d01cd523e25f256ee9ea16d699b4364bb0bf94cc04e57fafc21
-	sha256sums = 4fb2d98dff14f54f16f833352447437ac8374c2be3748f1c4837de6265748410
 
 pkgname = unx-desktop
