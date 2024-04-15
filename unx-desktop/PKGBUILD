@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=6
-pkgrel=7
+pkgrel=8
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -108,5 +108,5 @@ package() {
     install -Dm 0644 "set-global-dconf-profile.sh" "$pkgdir/etc/profile.d/set-global-dconf-profile.sh"
     install -Dm 0644 "unx-dconf-profile" "$pkgdir/etc/dconf/profile/unx"
     install -Dm 0644 "dconf-settings-unx.ini" "$pkgdir/etc/dconf/db/unx.d/dconf-settings-unx.ini"
-    install -Dm 0644 "dconf-update.hook" "$pkgdir/usr/share/libalpm/hooks/dconf-update.hook"
+    install -Dm 0644 "dconf-update.hook" "$pkgdir/usr/share/libalpm/hooks/dconf-update-unx.hook"
 }
