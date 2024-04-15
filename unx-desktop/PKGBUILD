@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=6
-pkgrel=2
+pkgrel=3
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -103,7 +103,7 @@ install="$pkgname.install"
 
 package() {
     install -Dm 0644 "50-aten-usb-switch-power-save.rules" "$pkgdir/etc/udev/rules.d/50-aten-usb-switch-power-save.rules"
-    install -Dm 0644 "set-global-dconf-profile.sh" "$pkgdir/etc/profile.d/set-global-dconf-profile.sh"
+    install -Dm 0755 "set-global-dconf-profile.sh" "$pkgdir/etc/profile.d/set-global-dconf-profile.sh"
     install -Dm 0644 "unx-dconf-profile" "$pkgdir/etc/dconf/profile/unx"
-    install -Dm 0644 "dconf-settings-unx.ini" "$pkgdir/etc/donf/db/unx.d/dconf-settings-unx.ini"
+    install -Dm 0644 "dconf-settings-unx.ini" "$pkgdir/etc/dconf/db/unx.d/dconf-settings-unx.ini"
 }
