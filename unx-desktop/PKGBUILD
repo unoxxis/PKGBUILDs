@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=6
-pkgrel=9
+pkgver=7
+pkgrel=1
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -44,7 +44,7 @@ depends+=(
     yelp gnome-tour
     raider-file-shredder # Vielleicht andere Lösung besser?
     collision # Prüfsummen checken - kann das nicht Nautilus?
-    # decoder # QR Code Scan/Erkennen
+    decoder # QR Code Scan/Erkennen
     impression # Geht auch mit dd, aber ist vielleicht netter...
     junction # Braucht es den Chooser oder reicht Config?
     # warp # Schauen, wie oft der Dateitransfer vorkommt. Wichtiger wäre Richtung Handy oder Windows
