@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
-	pkgver = 5
-	pkgrel = 6
+	pkgver = 6
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -82,9 +82,16 @@ pkgbase = unx-desktop
 	depends = noto-fonts
 	depends = ttf-dejavu
 	depends = ttf-liberation
+	depends = papirus-icon-theme
 	depends = baobab
 	depends = sysprof
 	source = 50-aten-usb-switch-power-save.rules
+	source = set-global-dconf-profile.sh
+	source = unx-dconf-profile
+	source = dconf-settings-unx.ini
 	sha256sums = 25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8
+	sha256sums = cd44842f16af3ad847024154bbf6a1bb01690c721661d17bffada12d3ca83b75
+	sha256sums = 29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22
+	sha256sums = 1b92f9cc229c2d77388e4988aa9473d418f1bbd8416d53424c749d28aa3c638c
 
 pkgname = unx-desktop

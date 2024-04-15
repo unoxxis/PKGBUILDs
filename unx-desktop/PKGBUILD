@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=5
-pkgrel=6
+pkgver=6
+pkgrel=2
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -74,6 +74,11 @@ depends+=(
     noto-fonts-emoji noto-fonts ttf-dejavu ttf-liberation
 )
 
+# Beautification
+depends+=(
+    papirus-icon-theme
+)
+
 # System Administration Tools
 depends+=(
     baobab # GNOME alternative to qdirstat
@@ -82,14 +87,23 @@ depends+=(
 
 source=(
     '50-aten-usb-switch-power-save.rules'
+    'set-global-dconf-profile.sh'
+    'unx-dconf-profile'
+    'dconf-settings-unx.ini'
 )
 
 sha256sums=(
     '25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8'
+    'cd44842f16af3ad847024154bbf6a1bb01690c721661d17bffada12d3ca83b75'
+    '29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22'
+    '1b92f9cc229c2d77388e4988aa9473d418f1bbd8416d53424c749d28aa3c638c'
 )
 
 install="$pkgname.install"
 
 package() {
     install -Dm 0644 "50-aten-usb-switch-power-save.rules" "$pkgdir/etc/udev/rules.d/50-aten-usb-switch-power-save.rules"
+    install -Dm 0644 "set-global-dconf-profile.sh" "$pkgdir/etc/profile.d/set-global-dconf-profile.sh"
+    install -Dm 0644 "unx-dconf-profile" "$pkgdir/etc/dconf/profile/unx"
+    install -Dm 0644 "dconf-settings-unx.ini" "$pkgdir/etc/donf/db/unx.d/dconf-settings-unx.ini"
 }

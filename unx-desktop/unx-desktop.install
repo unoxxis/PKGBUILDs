@@ -13,6 +13,10 @@ post_install() {
     # Enable GDM
     echo "Enable GDM..."
     systemctl enable gdm.service
+
+    # Update systemwide DConf databases
+    echo "Update global dconf settings..."
+    dconf update
 }
 
 ## arg 1:  the new package version
