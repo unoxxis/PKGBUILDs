@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-devel
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc="Unoxxis Metapackage for development tools"
 arch=('any')
@@ -13,6 +13,9 @@ depends=(unx-base base-devel)
 
 # Extended GIT resources
 depends+=(git gitflow-avh gitflow-zshcompletion-avh gitflow-bashcompletion-avh git-lfs)
+
+# Code Editor
+depends+=(code)
 
 # source=()
 

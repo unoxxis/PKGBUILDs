@@ -11,7 +11,7 @@ set -e
 ## arg 1:  the new package version
 post_install() {
     # Install git lfs
-    echo "Setting up git lfs..."
+    echo "Initializing git lfs..."
     git lfs install
 }
 
