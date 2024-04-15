@@ -28,7 +28,7 @@ post_install() {
     echo "Include = /etc/pacman.d/*.conf" >> /etc/pacman.conf
 
     # post_upgrade
-#}
+}
 
 ## arg 1:  the new package version
 ## arg 2:  the old package version
