@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=5
-pkgrel=1
+pkgrel=3
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -46,7 +46,7 @@ depends+=(
     decoder # QR Code Scan/Erkennen
     impression # Geht auch mit dd, aber ist vielleicht netter...
     junction # Braucht es den Chooser oder reicht Config?
-    warp # Schauen, wie oft der Dateitransfer vorkommt. Wichtiger wäre Richtung Handy oder Windows
+    # warp # Schauen, wie oft der Dateitransfer vorkommt. Wichtiger wäre Richtung Handy oder Windows
 )
 # Lets see if this can replace Thunderbird!
 depends+=(
@@ -70,6 +70,7 @@ depends+=(
 # Fonts
 depends+=(
     ttf-fira-code ttf-firacode-nerd ttf-meslo-nerd-font-powerlevel10k # For Terminal
+    noto-fonts-emoji noto-fonts ttf-dejavu ttf-liberation
 )
 
 # System Administration Tools
