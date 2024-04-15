@@ -1,0 +1,17 @@
+pkgbase = unx-gnome-settings
+	pkgdesc = Unoxxis GNOME profile
+	pkgver = 1
+	pkgrel = 2
+	url = https://github.com/unoxxis/PKGBUILDs
+	arch = any
+	groups = unoxxis-meta
+	license = GPL-3.0-or-later
+	depends = dconf
+	source = set-global-dconf-profile.sh
+	source = unx-dconf-profile
+	source = dconf-settings-unx.ini
+	sha256sums = 504e6b841a3aa9b963e650b677a6e78452f13d9b9ba642f4ebca3d1f7e34e358
+	sha256sums = 29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22
+	sha256sums = 01301051fa266d01cd523e25f256ee9ea16d699b4364bb0bf94cc04e57fafc21
+
+pkgname = unx-gnome-settings
