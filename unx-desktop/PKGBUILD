@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=6
-pkgrel=6
+pkgrel=7
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -90,6 +90,7 @@ source=(
     'set-global-dconf-profile.sh'
     'unx-dconf-profile'
     'dconf-settings-unx.ini'
+    'dconf-update.hook'
 )
 
 sha256sums=(
@@ -97,6 +98,7 @@ sha256sums=(
     '504e6b841a3aa9b963e650b677a6e78452f13d9b9ba642f4ebca3d1f7e34e358'
     '29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22'
     '01301051fa266d01cd523e25f256ee9ea16d699b4364bb0bf94cc04e57fafc21'
+    '4fb2d98dff14f54f16f833352447437ac8374c2be3748f1c4837de6265748410'
 )
 
 install="$pkgname.install"
@@ -106,4 +108,5 @@ package() {
     install -Dm 0644 "set-global-dconf-profile.sh" "$pkgdir/etc/profile.d/set-global-dconf-profile.sh"
     install -Dm 0644 "unx-dconf-profile" "$pkgdir/etc/dconf/profile/unx"
     install -Dm 0644 "dconf-settings-unx.ini" "$pkgdir/etc/dconf/db/unx.d/dconf-settings-unx.ini"
+    install -Dm 0644 "dconf-update.hook" "$pkgdir/usr/share/libalpm/hooks/dconf-update.hook"
 }
