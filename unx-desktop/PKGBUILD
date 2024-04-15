@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=6
-pkgrel=5
+pkgrel=6
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -76,7 +76,7 @@ depends+=(
 
 # Beautification
 depends+=(
-    papirus-icon-theme
+    papirus-icon-theme gnome-backgrounds
 )
 
 # System Administration Tools
@@ -96,7 +96,7 @@ sha256sums=(
     '25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8'
     '504e6b841a3aa9b963e650b677a6e78452f13d9b9ba642f4ebca3d1f7e34e358'
     '29aa11bf54b165bab242067e90a815aa6d89756cce1e2d970806a07e525f8a22'
-    '1b92f9cc229c2d77388e4988aa9473d418f1bbd8416d53424c749d28aa3c638c'
+    '01301051fa266d01cd523e25f256ee9ea16d699b4364bb0bf94cc04e57fafc21'
 )
 
 install="$pkgname.install"
