@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-gnome-settings
 pkgver=1
-pkgrel=2
+pkgrel=1
 pkgdesc="Unoxxis GNOME profile"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
