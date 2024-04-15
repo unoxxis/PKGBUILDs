@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 8
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -59,10 +59,6 @@ pkgbase = unx-desktop
 	depends = yelp
 	depends = gnome-tour
 	depends = raider-file-shredder
-	depends = collision
-	depends = decoder
-	depends = impression
-	depends = junction
 	depends = gnome-calendar
 	depends = gnome-contacts
 	depends = geary
@@ -88,6 +84,7 @@ pkgbase = unx-desktop
 	depends = gnome-backgrounds
 	depends = baobab
 	depends = sysprof
+	optdepends = unx-desktop-extra: slow to build additional packages
 	source = 50-aten-usb-switch-power-save.rules
 	sha256sums = 25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8
 

@@ -1,0 +1,29 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=unx-desktop-extra
+pkgver=1
+pkgrel=1
+pkgdesc="Unoxxis Metapackage for desktop systems - expensive build systems"
+arch=('any')
+url="https://github.com/unoxxis/PKGBUILDs"
+license=('GPL-3.0-or-later')
+groups=(unoxxis-meta)
+
+# Expensive to build (rust) packages for GNOME
+depends=(
+    collision # Prüfsummen checken - kann das nicht Nautilus?
+    decoder # QR Code Scan/Erkennen
+    impression # Geht auch mit dd, aber ist netter...
+    junction # Braucht es den Chooser oder reicht Config?
+    warp # Schauen, wie oft der Dateitransfer vorkommt. Wichtiger wäre Richtung Handy oder Windows
+)
+
+#source=(
+#)
+
+#sha256sums=(
+#)
+
+#install="$pkgname.install"
+
+#package() {
+#}

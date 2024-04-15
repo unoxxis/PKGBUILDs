@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=8
-pkgrel=1
+pkgrel=2
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -43,11 +43,6 @@ depends+=(
     cheese # Webcam Aufnahme wirklich nötig?
     yelp gnome-tour
     raider-file-shredder # Vielleicht andere Lösung besser?
-    collision # Prüfsummen checken - kann das nicht Nautilus?
-    decoder # QR Code Scan/Erkennen
-    impression # Geht auch mit dd, aber ist vielleicht netter...
-    junction # Braucht es den Chooser oder reicht Config?
-    # warp # Schauen, wie oft der Dateitransfer vorkommt. Wichtiger wäre Richtung Handy oder Windows
 )
 # Lets see if this can replace Thunderbird!
 depends+=(
@@ -84,6 +79,8 @@ depends+=(
     baobab # GNOME alternative to qdirstat
     sysprof
 )
+
+optdepends=('unx-desktop-extra: slow to build additional packages')
 
 source=(
     '50-aten-usb-switch-power-save.rules'
