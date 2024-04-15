@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
 pkgver=8
-pkgrel=3
+pkgrel=4
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
