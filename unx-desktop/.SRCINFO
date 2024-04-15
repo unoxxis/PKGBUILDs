@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
-	pkgver = 8
-	pkgrel = 3
+	pkgver = 9
+	pkgrel = 1
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -58,7 +58,6 @@ pkgbase = unx-desktop
 	depends = cheese
 	depends = yelp
 	depends = gnome-tour
-	depends = raider-file-shredder
 	depends = gnome-calendar
 	depends = gnome-contacts
 	depends = geary
