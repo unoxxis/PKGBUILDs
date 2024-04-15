@@ -27,7 +27,7 @@ post_install() {
     echo "# Read drop-in config files from /etc/pacman.d/" >> /etc/pacman.conf
     echo "Include = /etc/pacman.d/*.conf" >> /etc/pacman.conf
 
-    post_upgrade
+    # post_upgrade
 #}
 
 ## arg 1:  the new package version
@@ -38,9 +38,9 @@ post_install() {
 
 ## arg 1:  the new package version
 ## arg 2:  the old package version
-post_upgrade() {
-    
-}
+#post_upgrade() {
+    # do something
+#}
 
 ## arg 1:  the old package version
 #pre_remove() {
