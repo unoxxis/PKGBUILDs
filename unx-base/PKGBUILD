@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-base
 pkgver=7
-pkgrel=1
+pkgrel=2
 pkgdesc="Unoxxis Base System Metapackage"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -23,6 +23,7 @@ depends+=(
 # Basic Tools
 depends+=(
     vim git man-db man-pages zsh bat git-delta btop
+    zsh-completions
 )
 
 # Basic System Administration Tools
