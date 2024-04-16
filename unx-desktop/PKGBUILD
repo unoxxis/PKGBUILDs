@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=9
-pkgrel=1
+pkgrel=2
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -76,7 +76,7 @@ depends+=(
 # System Administration Tools
 depends+=(
     baobab # GNOME alternative to qdirstat
-    sysprof
+    sysprof gparted
 )
 
 optdepends=('unx-desktop-extra: slow to build additional packages')
