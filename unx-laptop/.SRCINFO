@@ -1,11 +1,13 @@
 pkgbase = unx-laptop
 	pkgdesc = Unoxxis Metapackage for laptop systems
-	pkgver = 1
+	pkgver = 2
 	pkgrel = 1
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	groups = unoxxis-meta
 	license = GPL-3.0-or-later
 	depends = unx-desktop
+	depends = networkmanager-l2tp
+	depends = strongswan
 
 pkgname = unx-laptop

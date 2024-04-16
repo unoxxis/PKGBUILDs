@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-laptop
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc="Unoxxis Metapackage for laptop systems"
 arch=('any')
@@ -10,6 +10,9 @@ groups=(unoxxis-meta)
 
 # Base System Packages
 depends=(unx-desktop)
+
+# Packages to connect to home VPN
+depends+=(networkmanager-l2tp strongswan)
 
 # source=()
 
