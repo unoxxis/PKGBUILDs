@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=9
-pkgrel=2
+pkgrel=3
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -19,7 +19,7 @@ depends+=(
     loupe evince tecla tracker3-miners  
     gnome-color-manager gnome-keyring gnome-logs gnome-session gnome-settings-daemon
     gnome-shell gnome-shell-extensions gnome-user-docs 
-    gnome-console gnome-control-center gnome-menus
+    gnome-control-center gnome-menus
     gnome-calculator gnome-characters gnome-clocks gnome-connections gnome-font-viewer
     gnome-remote-desktop gnome-system-monitor gnome-weather
     dconf-editor gnome-tweaks
@@ -31,7 +31,7 @@ depends+=(
 )
 # Not so sure packages
 depends+=(
-     # QDirstat maybe?
+    gnome-console gnome-terminal # Not decided which is better...
     gnome-disk-utility
     gnome-maps
     gnome-music totem # VLC?
