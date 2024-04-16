@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
-	pkgver = 9
-	pkgrel = 3
+	pkgver = 10
+	pkgrel = 1
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -72,6 +72,7 @@ pkgbase = unx-desktop
 	depends = firefox
 	depends = firefox-i18n-de
 	depends = firefox-ublock-origin
+	depends = keepassxc
 	depends = ttf-fira-code
 	depends = ttf-firacode-nerd
 	depends = ttf-meslo-nerd-font-powerlevel10k

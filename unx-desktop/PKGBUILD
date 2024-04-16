@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=9
-pkgrel=3
+pkgver=10
+pkgrel=1
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -60,6 +60,7 @@ depends+=(
 # Basic Applications
 depends+=(
     firefox firefox-i18n-de firefox-ublock-origin
+    keepassxc
 )
 
 # Fonts
