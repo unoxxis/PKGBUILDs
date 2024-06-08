@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
-pkgver=10
+pkgver=11
 pkgrel=1
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
@@ -12,43 +12,57 @@ groups=(unoxxis-meta)
 depends=(unx-base)
 
 # Desktop Environment
+
+# =============== GNOME =====================
 # Sure Packages from Gnome Group
-depends+=(
-    gdm nautilus sushi
-    xdg-desktop-portal-gnome xdg-user-dirs-gtk
-    loupe evince tecla tracker3-miners  
-    gnome-color-manager gnome-keyring gnome-logs gnome-session gnome-settings-daemon
-    gnome-shell gnome-shell-extensions gnome-user-docs 
-    gnome-control-center gnome-menus
-    gnome-calculator gnome-characters gnome-clocks gnome-connections gnome-font-viewer
-    gnome-remote-desktop gnome-system-monitor gnome-weather
-    dconf-editor gnome-tweaks
-    fwupd # Req to enable device security panel in gnome control panel 
-)
+# depends+=(
+#     gdm nautilus sushi
+#     xdg-desktop-portal-gnome xdg-user-dirs-gtk
+#     loupe evince tecla tracker3-miners  
+#     gnome-color-manager gnome-keyring gnome-logs gnome-session gnome-settings-daemon
+#     gnome-shell gnome-shell-extensions gnome-user-docs 
+#     gnome-control-center gnome-menus
+#     gnome-calculator gnome-characters gnome-clocks gnome-connections gnome-font-viewer
+#     gnome-remote-desktop gnome-system-monitor gnome-weather
+#     dconf-editor gnome-tweaks
+#     fwupd # Req to enable device security panel in gnome control panel 
+# )
 # GVFS
 depends+=(
     gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-goa
 )
 # Not so sure packages
-depends+=(
-    gnome-console gnome-terminal # Not decided which is better...
-    gnome-disk-utility
-    gnome-maps
-    gnome-music totem # VLC?
-    gnome-text-editor # Maybe replaced by either gVIM or Code?
-    gnome-user-share # This we usually do on the NAS
-    malcontent # Elternfreigabe? Weiß nicht was das kann...
-    simple-scan
-    snapshot # Flameshot?
-    cheese # Webcam Aufnahme wirklich nötig?
-    yelp gnome-tour
-)
+# depends+=(
+#     gnome-console gnome-terminal # Not decided which is better...
+#     gnome-disk-utility
+#     gnome-maps
+#     gnome-music totem # VLC?
+#     gnome-text-editor # Maybe replaced by either gVIM or Code?
+#     gnome-user-share # This we usually do on the NAS
+#     malcontent # Elternfreigabe? Weiß nicht was das kann...
+#     simple-scan
+#     snapshot # Flameshot?
+#     cheese # Webcam Aufnahme wirklich nötig?
+#     yelp gnome-tour
+# )
 # Lets see if this can replace Thunderbird!
-depends+=(
-    gnome-calendar gnome-contacts geary
-)
+# depends+=(
+#     gnome-calendar gnome-contacts geary
+# )
 # Excluded packages from Gnome base group
 # epiphany gnome-backgrounds gnome-software gnome-tour orca rygel 
+
+# =============== PLASMA =====================
+depends+=(
+    plasma-meta sddm sddm-kcm
+#    flatpak-kcm
+)
+
+# Graphical Boot screen
+# depends+=(
+#     plymouth
+#     breeze-plymouth breeze-grub plymouth-kcm
+# )
 
 # Sound
 depends+=(
@@ -71,7 +85,9 @@ depends+=(
 
 # Beautification
 depends+=(
-    unx-gnome-settings papirus-icon-theme gnome-backgrounds
+#    unx-gnome-settings gnome-backgrounds
+#    breeze-grub
+    papirus-icon-theme
 )
 
 # System Administration Tools

@@ -10,3 +10,5 @@ for directory in $(find . -name 'PKGBUILD' -exec dirname "{}" \; | sort -u); do
         git add .SRCINFO
     )
 done
+
+## TODO: Update checksums with updpkgsums from packman-contrib
