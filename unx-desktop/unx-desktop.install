@@ -12,7 +12,7 @@ set -e
 post_install() {
     # Enable GDM
     echo "Enable GDM..."
-    systemctl enable gdm.service
+    systemctl enable sddm.service
 
     # post_upgrade
 }
