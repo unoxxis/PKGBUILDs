@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=11
-pkgrel=6
+pkgrel=7
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -79,11 +79,11 @@ depends+=(
 # Basic Applications
 depends+=(
     firefox firefox-i18n-de firefox-ublock-origin
-    keepassxc
     kontact kaddressbook knotes korganizer zanshin kjots pim-data-exporter 
     kmail pim-sieve-editor kleopatra
-    merkuro # Unentschieden ob das besser ist?
+#    merkuro # Unentschieden ob das besser ist?
 #    kalarm 
+    keepassxc
 )
 
 # Fonts
