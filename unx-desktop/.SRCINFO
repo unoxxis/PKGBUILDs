@@ -1,7 +1,7 @@
 pkgbase = unx-desktop
 	pkgdesc = Unoxxis Metapackage for desktop systems
 	pkgver = 11
-	pkgrel = 5
+	pkgrel = 6
 	url = https://github.com/unoxxis/PKGBUILDs
 	install = unx-desktop.install
 	arch = any
@@ -32,7 +32,7 @@ pkgbase = unx-desktop
 	depends = firefox-ublock-origin
 	depends = keepassxc
 	depends = kontact
-	depends = kadressbook
+	depends = kaddressbook
 	depends = knotes
 	depends = korganizer
 	depends = zanshin
