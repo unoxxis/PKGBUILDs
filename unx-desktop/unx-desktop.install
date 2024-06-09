@@ -11,7 +11,7 @@ set -e
 ## arg 1:  the new package version
 post_install() {
     # Enable GDM
-    echo "Enable GDM..."
+    echo "Enable SDDM..."
     systemctl enable sddm.service
 
     # post_upgrade

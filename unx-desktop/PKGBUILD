@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=11
-pkgrel=2
+pkgrel=3
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -33,7 +33,6 @@ depends+=(
 )
 # Not so sure packages
 # depends+=(
-#     gnome-console gnome-terminal # Not decided which is better...
 #     gnome-disk-utility
 #     gnome-maps
 #     gnome-music totem # VLC?
@@ -60,8 +59,7 @@ depends+=(
 
 # Graphical Boot screen
 # depends+=(
-#     plymouth
-#     breeze-plymouth breeze-grub plymouth-kcm
+#     plymouth plymouth-kcm
 # )
 
 # Sound
@@ -69,6 +67,13 @@ depends+=(
     pipewire pipewire-alsa pipewire-jack pipewire-pulse
     wireplumber libpulse
     gst-plugin-pipewire
+)
+
+# Terminal
+depends+=(
+#    alacritty
+#    gnome-console gnome-terminal # Not decided which is better...
+    konsole yakuake
 )
 
 # Basic Applications
@@ -86,17 +91,19 @@ depends+=(
 # Beautification
 depends+=(
 #    unx-gnome-settings gnome-backgrounds
-#    breeze-grub
+#    breeze-plymouth breeze-grub
     papirus-icon-theme
 )
 
 # System Administration Tools
 depends+=(
-    baobab # GNOME alternative to qdirstat
+#    baobab # GNOME alternative to qdirstat
+    qdirstat
     sysprof gparted
+    solaar
 )
 
-optdepends=('unx-desktop-extra: slow to build additional packages')
+# optdepends=('unx-desktop-extra: slow to build additional packages')
 
 source=(
     '50-aten-usb-switch-power-save.rules'
