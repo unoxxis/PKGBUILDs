@@ -1,13 +1,13 @@
 pkgbase = list-optdeps
 	pkgdesc = List optional dependencies required by installed packages
 	pkgver = 0.1
-	pkgrel = 1
+	pkgrel = 3
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
 	license = GPL-3.0-or-later
 	depends = expac
 	depends = python3
-	source = list-optdeps.sh
-	sha256sums = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+	source = list-optdeps.py
+	sha256sums = aea3fbe53f3504b66c3996a9bb8b2b007111757a552446ea76a71f5c291be24a
 
 pkgname = list-optdeps
