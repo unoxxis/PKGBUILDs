@@ -2,13 +2,20 @@
 # Pre--Commit Script to regenerate .SRCINFO
 
 echo "Pre-Commit Hook: Regenerating all .SRCINFO files..."
-for directory in $(find . -name 'PKGBUILD' -exec dirname "{}" \; | sort -u); do
-    echo "Regenerating .SRCINFO in $directory"
+# Get a list of directories where added, renamed, copied or modified files reside
+for directory in $(git diff --cached --name-only --diff-filter=ACMR | sed 's#/[^/]*$##' | sort -u); do
+#for directory in $(find . -name 'PKGBUILD' -exec dirname "{}" \; | sort -u); do
     ( 
         cd "$directory" 
-        makepkg --printsrcinfo > .SRCINFO 
-        git add .SRCINFO
+        if [ -f PKGBUILD ]; then
+
+            echo "Updating Checksums in $directory"
+            updpkgsums
+            git add PKGBUILD
+
+            echo "Regenerating .SRCINFO in $directory"
+            makepkg --printsrcinfo > .SRCINFO 
+            git add .SRCINFO
+        fi
     )
 done
-
-## TODO: Update checksums with updpkgsums from packman-contrib
