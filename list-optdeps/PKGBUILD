@@ -1,6 +1,6 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=list-optdeps
-pkgver=1.0.0
+pkgver=0.1
 pkgrel=1
 pkgdesc="List optional dependencies required by installed packages"
 arch=('any')

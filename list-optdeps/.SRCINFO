@@ -1,6 +1,6 @@
 pkgbase = list-optdeps
 	pkgdesc = List optional dependencies required by installed packages
-	pkgver = 1.0.0
+	pkgver = 0.1
 	pkgrel = 1
 	url = https://github.com/unoxxis/PKGBUILDs
 	arch = any
