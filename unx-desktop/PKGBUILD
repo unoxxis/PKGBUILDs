@@ -1,7 +1,7 @@
 # Maintainer: Boris Wezisla <uno@unoxxis.net>
 pkgname=unx-desktop
 pkgver=11
-pkgrel=7
+pkgrel=8
 pkgdesc="Unoxxis Metapackage for desktop systems"
 arch=('any')
 url="https://github.com/unoxxis/PKGBUILDs"
@@ -28,9 +28,9 @@ depends=(unx-base)
 #     fwupd # Req to enable device security panel in gnome control panel 
 # )
 # GVFS
-depends+=(
-    gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-goa
-)
+#depends+=(
+#    gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-goa
+#)
 # Not so sure packages
 # depends+=(
 #     gnome-disk-utility
@@ -76,6 +76,13 @@ depends+=(
     konsole yakuake
 )
 
+# File browser
+depends+=(
+    dolphin dolphin-plugins
+    kdegraphics-thumbnailers libheif ffmpegthumbs kimageformats #Thumbnailers
+    kompare baloo
+)
+
 # Basic Applications
 depends+=(
     firefox firefox-i18n-de firefox-ublock-origin
@@ -113,9 +120,7 @@ source=(
     '50-aten-usb-switch-power-save.rules'
 )
 
-sha256sums=(
-    '25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8'
-)
+sha256sums=('25d70820120158cb3a3032a8982876d5aed0a7725eb5555f23cfc0e81ba0b0b8')
 
 install="$pkgname.install"
 
