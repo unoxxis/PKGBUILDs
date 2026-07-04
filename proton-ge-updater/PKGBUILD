@@ -1,0 +1,22 @@
+# Maintainer: Boris Wezisla <uno@unoxxis.net>
+pkgname=proton-ge-updater
+pkgver=1
+pkgrel=1
+pkgdesc="Official Update Proton-GE Script from Repository Readme"
+arch=('any')
+url="https://github.com/GloriousEggroll/proton-ge-custom"
+license=('GPL-3.0-or-later')
+
+depends=(bash lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader)
+
+source=(
+    proton-ge-updater.sh
+)
+
+sha256sums=('7c83f57be801994e819ceee269d0f39fe050572a109944f8331a4ed288d52ccf')
+
+# install="$pkgname.install"
+
+package() {
+    install -Dm 0755 proton-ge-updater.sh "$pkgdir/usr/bin/proton-ge-updater"
+}

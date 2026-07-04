@@ -1,0 +1,17 @@
+pkgbase = proton-ge-updater
+	pkgdesc = Official Update Proton-GE Script from Repository Readme
+	pkgver = 1
+	pkgrel = 1
+	url = https://github.com/GloriousEggroll/proton-ge-custom
+	arch = any
+	license = GPL-3.0-or-later
+	depends = bash
+	depends = lib32-mesa
+	depends = vulkan-radeon
+	depends = lib32-vulkan-radeon
+	depends = vulkan-icd-loader
+	depends = lib32-vulkan-icd-loader
+	source = proton-ge-updater.sh
+	sha256sums = 7c83f57be801994e819ceee269d0f39fe050572a109944f8331a4ed288d52ccf
+
+pkgname = proton-ge-updater
